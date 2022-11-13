@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "@mui/system";
+import FirstBlock from "./components/SiteBlocks/FirstBlock";
+import SecondBlock from "./components/SiteBlocks/SecondBlock";
+import DownloadBlock from "./components/SiteBlocks/DownloadBlock";
+import FeedBlock from "./components/SiteBlocks/FeedBlock";
+import LastBlock from "./components/SiteBlocks/LastBlock";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <FirstBlock />
+        <SecondBlock />
+        <DownloadBlock />
+        <FeedBlock />
+        <LastBlock />
+        <Footer />
+      </Container>
     </div>
   );
 }
